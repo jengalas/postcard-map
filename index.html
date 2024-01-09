@@ -8,4 +8,22 @@
 <body>
     
 </body>
+<script>
+
+    // JSON endpoint available here: https://script.google.com/macros/s/AKfycbyDO9X62ATZA8XePMw7r3RuMVrhsdU6uICQKtLy_ZU5XTi7TaCa8JgWxQDbxOUEw9MI/exec made by following: https://www.youtube.com/watch?v=PdtbLx1OaVc
+
+    // Can also try this: https://github.com/HandsOnDataViz/leaflet-maps-with-google-sheets?tab=readme-ov-file
+
+    fetch('https://script.google.com/macros/s/AKfycbyDO9X62ATZA8XePMw7r3RuMVrhsdU6uICQKtLy_ZU5XTi7TaCa8JgWxQDbxOUEw9MI/exec') 
+        .then(response => response.json()) 
+        .then(res => { 
+            // Do something with the JSON data 
+            console.log(res.data[0].Latitude); 
+        }) 
+        .catch(error => { 
+            // Handle any errors that occur 
+            console.error(error); 
+        });
+
+</script>
 </html>
